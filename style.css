@@ -1,0 +1,167 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(250, 235, 215,0.5);
+    display: grid;
+    place-items: center;
+    height: 98vh;
+    width: 98vw;
+}
+.outer{
+    position: relative;
+    background: rgb(0, 0, 0);
+    height: 35rem;
+    width: 35rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .till{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transform: rotate(calc(var(--sindex) * 6deg));
+        text-align: center;
+        
+    }
+    .till p{
+        position: absolute;
+        display: inline-block;
+        height: 0.8rem;
+        width: 0.2rem;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 0 0rem 50rem 50rem;
+    }
+    .till:nth-child(5n) p {
+        height: 1.8rem;
+        width: 0.2rem;
+        border: 2px solid red;
+        border-radius: 0 0rem 50rem 50rem;
+    }
+    
+}
+
+.inner{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .day-date{
+        position: absolute;
+        top :46%;
+        left : 69%;
+        z-index: 0;
+        height: 2.4rem;
+        width: 5.5rem;
+        background-color: rgb(19, 17, 16);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: white;
+        border-radius: 20%;
+    }
+    .ampm{
+        position: absolute;
+        top :46%;
+        left : 14%;
+        z-index: 0;
+        height: 2rem;
+        width: 2.5rem;
+        background-color: rgb(19, 17, 16);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: white;
+        border-radius: 20%;
+    }
+
+    span {
+       position: absolute;
+       transform: rotate(calc(var(--index) * 30deg));
+       inset : 6px;
+       text-align: center;
+    }
+
+    span p{
+        font-size: 2.4rem;
+        font-weight: 600;
+        transform: rotate(calc(var(--index) * -30deg));
+    }
+
+
+     .had-box{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .had{
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        i{
+            display: inline-block;
+            transform-origin: bottom;       
+        }
+    }
+
+    .had-box::after{
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        height: 1rem;
+        width: 1rem;
+        background-color: rgb(233, 220, 220);
+    }
+
+    .had-hour{
+       height: 20rem;
+       width: 20rem; 
+      
+    }
+    .had-hour i{
+       height: calc(20rem / 2 + 1rem);
+       width: 0.2rem; 
+       border: 3.5px solid gray;
+       border-radius: 50%;  
+    }
+    .had-minute{
+        height: 25rem;
+        width: 25rem; 
+      
+    }
+    .had-minute i{
+        height: calc(25rem / 2 + 1.3rem);
+        width: 0.1rem; 
+        border: 3px solid gray;
+        border-radius: 50%;  
+    }
+    .had-second {
+        height: 28rem;
+        width: 28rem; 
+       
+    }
+    .had-second i{
+        height: calc(28rem / 2 + 2.4rem);
+        width: 0.1rem; 
+        border: 2px solid rgb(196, 195, 195);
+        border-radius: 50%;
+    }
+}
