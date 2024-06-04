@@ -12,3 +12,6 @@
 .formbox{
     max-width: 100vw;
 }
+.card{
+    cursor: pointer;
+}
