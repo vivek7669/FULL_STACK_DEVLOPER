@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.screen_box{
+    height: 50vh;
+    width: 50vw;
+}
+.content_box{
+    height: 15vh;
+    width: 50vw;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+.pill_box{
+    height: 1.5rem;
+    width:  2.5rem;
+}
+.pill_boxs{
+    margin-top: -7rem;
+}
+i{
+    cursor: pointer;
+}
