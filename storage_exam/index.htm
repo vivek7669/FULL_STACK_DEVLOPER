@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container-fluid {
+            height: 100vh;
+            width: 90vw;
+        }
+
+        .img_u {
+            height: 15rem;
+        }
+
+        .sidebar {
+            height: 100vh;
+        }
+        #cards{
+            padding: 20px;
+            gap :1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid border">
+
+        <div class="row border">
+            <div class=" img_u col-3 border d-flex flex-column justify-content-center align-items-center sidebar">
+                <img src="data:image/jpeg;base64,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"
+                    class="img-circle rounded-circle pl-3 mb-5 mx-5" id="image_user" alt="user image">
+                <h3 class="my-4" id="user_name">xyz</h3>
+                <pre id="content"
+                    class="text-wrap mt-5 px-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, qui asperiores iure ab nobis eum, beatae voluptatem reprehenderit obcaecati iusto cupiditate id fuga accusamus placeat assumenda porro quibusdam eligendi cumque deleniti officia eveniet recusandae amet! Esse iste perspiciatis obcaecati, voluptatem alias vitae aperiam libero fugit tenetur a, aliquam corrupti, dolores vel aut reprehenderit quibusdam velit quia. Praesentium, saepe enim culpa recusandae cum quisquam vero? Ipsa hic maxime quidem voluptates nobis magnam quod, provident blanditiis dolor distinctio commodi debitis ipsam placeat, iusto quasi neque nemo explicabo harum! Suscipit nihil enim fugiat quis labore. Voluptate natus rem eligendi distinctio nostrum, earum ratione.</pre>
+            </div>
+            <div class="col-9">
+
+                <ul class="nav nav-pills nav-fill border p-2 mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.htm">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add_news.htm">Add News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign_up.htm">Sign_up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.htm">Login</a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <ul class="nav nav-pills nav-fill border p-2 mt-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">india</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">pakistan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">bangladesh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">nepal</a>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <div class="container border d-flex flex-wrap" id="cards">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
