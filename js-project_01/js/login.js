@@ -1,4 +1,4 @@
-import navbar from "../components/navbar.js";
+
 
 let database_obj = JSON.parse(localStorage.getItem('user')) ?? {} ;
 let data_email = database_obj.email;
@@ -34,9 +34,6 @@ const getdata = (e) => {
     }
     checkdata(obj1)
 }
-
-
-document.querySelector('.navbar').innerHTML = navbar();
 
 let login_data = document.querySelector("#login_data");
 login_data.addEventListener("submit",getdata);

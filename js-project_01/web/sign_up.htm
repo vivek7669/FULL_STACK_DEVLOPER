@@ -12,7 +12,11 @@
         .container{
             height: 100vh;
             width: 100vw;
-        }
+        }.login_link{
+            position: absolute;
+            top:48rem;
+            left:57.4rem;
+}
     </style>
 </head>
 
@@ -26,7 +30,8 @@
                 <input type="text" placeholder="Enter Your Name" id="name" class="form-control" required><br>
                 <input type="email" placeholder="Enter Your Email" id="email" class="form-control" required><br>
                 <input type="url" placeholder="Enter Your Image" id="image" class="form-control" required><br>
-                <select name="country" class="form-control" id="country" required>
+                <select name="country" class="form-control" id="country" required >
+                    <option>Select</option>
                     <option value="india">india</option>
                     <option value="pakistan">pakistan</option>
                     <option value="bangladesh">bangladesh</option>
@@ -37,7 +42,9 @@
             </form>
         </div>
     </div>
-
+    <div class="login_link">
+        <a href="../web/login.htm" class="text-decoration-none">Login Here</a>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
