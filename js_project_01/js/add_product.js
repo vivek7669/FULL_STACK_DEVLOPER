@@ -2,6 +2,10 @@ let arr_pro = [];
  arr_pro = JSON.parse(localStorage.getItem('products')) ?? [];
 //  console.log(typeof(arr_pro));
 
+if(localStorage.getItem('islogin')=='false') {
+    location.href = "../index.htm";
+}
+
 const getdata = (e) => {
     e.preventDefault();
     

@@ -1,7 +1,10 @@
 import navbar from "../components/navbar.js";
 
-let cart_product=[];
-let counter = 0;
+let cart_product = [];
+
+if(localStorage.getItem('islogin')=='false') {
+    location.href = "../index.htm";
+}
 
 let product_datas = [];
  product_datas = JSON.parse(localStorage.getItem('products')) || [];
@@ -19,17 +22,21 @@ const isexist = (exist_product) => {
    return cart_product.includes(exist_product);
 }
 
-const datafind = (product) => {
-    counter++; 
+const datafind = (product,ind) => {
+    
    if(isexist(product)){
-    product.quatity = counter;
-    localStorage.setItem('cart_product',JSON.stringify(cart_product));
+    cart_product.map((item,ind)=>{
+        if(product.id == item.id){
+            cart_product[ind].quatity += 1 ;
+        }
+    })
    }else{
     // console.log(id);
     cart_product.push(product);
     product.quatity = 1;
-    localStorage.setItem('cart_product',JSON.stringify(cart_product));
    }
+
+   localStorage.setItem('cart_product',JSON.stringify(cart_product));
 }
 
 const uimaker = (products_data) => {
@@ -60,7 +67,7 @@ const uimaker = (products_data) => {
         buy.classList.add('card-text','btn','btn-primary','btn-sm');
         buy.innerHTML = "Buy";
         buy.style.margin = "-1rem 0rem 1rem 0rem";
-        buy.addEventListener('click',()=>datafind(elm));
+        buy.addEventListener('click',()=>datafind(elm,ind));
         let card_btn = document.createElement('div');
         card_btn.append(Ignore,buy);
         card_btn.style.margin = "0rem 0rem -1rem 0.5rem";
@@ -86,5 +93,42 @@ else{
     document.querySelector('#logout').style.display = 'none';
 }
 
-// console.log(product_datas);
+function pantshort(e){
+   let l =  product_datas.filter((item)=>{ if(item.title == e.target.id){ return item }})
+   console.log(l);
+   uimaker(l);
+}
+function shirtshort(e){
+   let l =  product_datas.filter((item)=>{ if(item.title == e.target.id){ return item }})
+   console.log(l);
+   uimaker(l);
+}
+function serchvalue(e){
+   e.preventDefault();
+   let l =  product_datas.filter((item)=>{ if(item.title == document.querySelector('#serchdata').value){ return item }})
+//    console.log(l);
+   uimaker(l);
+}
+function serchvalue1(e){
+   e.preventDefault();
+    if(e.key  == 'Enter'){
+        let l =  product_datas.filter((item)=>{ if(item.title == document.querySelector('#serchdata').value){ return item }})
+               uimaker(l);
+    }  
+        // let l =  product_datas.filter((item)=>{ if(item.title == document.querySelector('#serchdata').value){ return item }})    
+        //        uimaker(l);
+}
+function all(){
+   uimaker(product_datas);
+}
+
+
+
+
+document.querySelector("#pant").addEventListener("click", pantshort)
+document.querySelector("#shirt").addEventListener("click", shirtshort)
+document.querySelector("#All").addEventListener("click", all)
+document.querySelector(".btn-primary").addEventListener("click",serchvalue)
+document.querySelector("#serchdata").addEventListener("input",serchvalue1)
+// console.log(product_datas);//    
 uimaker(product_datas);

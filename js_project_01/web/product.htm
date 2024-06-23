@@ -34,13 +34,30 @@
         .card_btn{
             padding: 10rem;
         }
-
+        .sorting_data{
+            column-gap: 1rem;
+        }
+        .sorting_data button{
+            padding: 0.4rem 1rem;
+            border-radius: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container-fluid container_navbar mt-3"></div>
+
+    <!-- Sorting Product -->
+     <div class="container sorting_data d-flex mt-4">
+        <button class="btn btn-sm btn-dark" id="pant">pant</button>
+        <button class="btn btn-sm btn-dark" id="shirt">shirt</button>
+        <button class="btn btn-sm btn-dark" id="All">All</button>
+     </div>
+
     <!-- <div class="container">
         <a class="btn btn-lg btn-primary btn-block" href="add.htm">Back To Home</a>
     </div> -->
