@@ -79,10 +79,14 @@ const uimaker = (products_data) => {
 }
 
 document.querySelector('.container_navbar').innerHTML = navbar();
+document.querySelector('.sproduct').classList.add('active','text-dark');
+document.querySelector('.home').classList.add('text-light');
+document.querySelector('.sproduct').classList.remove('text-light');
+document.querySelector('.home').classList.remove('active','text-dark');
 if(localStorage.getItem('islogin') == 'true'){
     document.querySelector('#sign_up').style.display = 'none';
     document.querySelector('#sign_in').style.display = 'none';
-    document.querySelector('#logout').style.width = '32rem';
+    document.querySelector('#logout').style.width = '60rem';
     document.querySelector('.user-name').innerHTML = `${data_name}`;
 }
 else{
@@ -132,3 +136,4 @@ document.querySelector(".btn-primary").addEventListener("click",serchvalue)
 document.querySelector("#serchdata").addEventListener("input",serchvalue1)
 // console.log(product_datas);//    
 uimaker(product_datas);
+

@@ -19,7 +19,7 @@ if(localStorage.getItem('islogin') == 'true'){
     document.querySelector('#sign_up').style.display = 'none';
     document.querySelector('#sign_in').style.display = 'none';
     // document.querySelector('#search_product').style.display = 'none';
-    document.querySelector('#logout').style.width = '32rem';
+    document.querySelector('#logout').style.width = '62rem';
     document.querySelector('.user-name').innerHTML = `${data_name}`;
 }
 else{
