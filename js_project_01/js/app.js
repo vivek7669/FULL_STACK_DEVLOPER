@@ -1,6 +1,8 @@
-
 import navbar from "../components/navbar.js";
+import carousel from "../components/slider.js";
+// import { Carousel, initMDB } from "mdb-ui-kit";
 
+// initMDB({ Carousel });
 let l = localStorage.getItem('islogin');
 if(l == 'false') {
     console.log(localStorage.getItem('islogin'));
@@ -14,6 +16,8 @@ let nav_container = document.querySelector('.container_navbar');
 nav_container.innerHTML = navbar()
 
 document.querySelector('.container_navbar').innerHTML = navbar();
+document.querySelector('.carousel').innerHTML = carousel();
+
 
 if(localStorage.getItem('islogin') == 'true'){
     document.querySelector('#sign_up').style.display = 'none';
@@ -23,6 +27,7 @@ if(localStorage.getItem('islogin') == 'true'){
     document.querySelector('.user-name').innerHTML = `${data_name}`;
 }
 else{
+    document.querySelector('#show_products').style.display = 'none';
     document.querySelector('#user-block').style.display = 'none';
     document.querySelector('#cartproduct').style.display = 'none';
     document.querySelector('#search_product').style.display = 'none';

@@ -4,7 +4,7 @@ const navbar = () => {
     <a class="nav-link text-dark active home" href="../index.htm">HOME</a>
   </li>
   <li class="nav-item  mx-3" id="user-block">
-  <a class="nav-link font-weight-bold text-light user-name " href="../index.htm">USER</a>
+  <a class="nav-link font-weight-bold text-light user-name " href="../web/user.htm">USER</a>
   </li>
 
   <li class="nav-item" id="sign_in">

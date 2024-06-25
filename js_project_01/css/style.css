@@ -6,3 +6,12 @@
 ul{
     clear: both;
 }
+.carousel-inner{
+   height: 54.6rem;
+}
+.fa-caret-left{
+    font-size: 3rem;
+}
+.fa-caret-right{
+    font-size: 3rem;
+}

@@ -8,7 +8,7 @@ document.querySelector('.sproduct').classList.add('text-light');
 document.querySelector('.home').classList.remove('active','text-dark');
 
 let user = JSON.parse(localStorage.getItem('user'));
-if(localStorage.getItem('islogin')=='false') {
+if(localStorage.getItem('islogin')=='false' || localStorage.getItem('islogin')==null) {
     location.href = "../index.htm";
 }
 
@@ -19,6 +19,9 @@ if(localStorage.getItem('islogin') == 'true'){
     // document.querySelector('#search_product').style.display = 'none';
     document.querySelector('#logout').style.width = '79rem';
     document.querySelector('.user-name').innerHTML = `${user.name}`;
+}
+else if (localStorage.getItem('islogin') == null){
+    location.href = '../index.htm';
 }
 else{
     document.querySelector('#user-block').style.display = 'none';

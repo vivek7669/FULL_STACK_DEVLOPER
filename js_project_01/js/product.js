@@ -77,7 +77,7 @@ const uimaker = (products_data) => {
 
     })
 }
-
+// console.log(localStorage.getItem('islogin'));
 document.querySelector('.container_navbar').innerHTML = navbar();
 document.querySelector('.sproduct').classList.add('active','text-dark');
 document.querySelector('.home').classList.add('text-light');
@@ -89,7 +89,11 @@ if(localStorage.getItem('islogin') == 'true'){
     document.querySelector('#logout').style.width = '60rem';
     document.querySelector('.user-name').innerHTML = `${data_name}`;
 }
+else if (localStorage.getItem('islogin') == null){
+    location.href = '../index.htm';
+}
 else{
+
     document.querySelector('#user-block').style.display = 'none';
     document.querySelector('#cartproduct').style.display = 'none';
     document.querySelector('#sign_up').style.display = 'inline-block';
