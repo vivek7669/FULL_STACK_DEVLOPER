@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer_div {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: rgb(36, 31, 31);
+    gap: 1rem;
+}
+.inner_card {
+    max-height: 52rem;
+    max-width: 21rem;
+}
+.description {
+    overflow: hidden;
+    height:7.8rem;
+    /* text-overflow: ellipsis;  */
+    overflow: hidden;
+}
+.title {
+    overflow: hidden;
+    height:3.9rem;
+    /* text-overflow: ellipsis;  */
+    overflow: hidden;
+}
+.card-img {
+    height: 10rem;
+    width: 12rem;
+}
+.prdiv {
+    width: 100%;
+}
+.btnbuy{
+    background-color: aliceblue;
+    color: rgb(36, 31, 31);
+    border: 1px solid rgb(36, 31, 31);
+}
+.btnbuy:hover{
+    background-color: rgb(36, 31, 31);
+    color: aliceblue;
+    border: 1px solid rgba(51, 43, 43,0.8);
+}
+.fa-star{
+    color: rgb(255, 255, 3);
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+    margin-right: 0.3rem;
+}
