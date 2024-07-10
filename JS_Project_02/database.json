@@ -11,6 +11,12 @@
       "username": "rahul",
       "email": "rahul@123",
       "password": "rahul"
+    },
+    {
+      "id": "6205",
+      "username": "vijay",
+      "email": "vijay@123",
+      "password": "vijay"
     }
   ],
   "products": []

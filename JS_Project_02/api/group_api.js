@@ -38,18 +38,18 @@ export const apiObject = {
         let de_response = await de_request.json()
         return de_response;
     },
-    isexist : async function(id){
+    isLogin : async function(email){
         let url = (`http://localhost:369/users/?email=${email}`);
         let de_request = await fetch(url);
         let de_response = await de_request.json()
-        if(de_response.length > 0){
-            console.log(de_response);
-            return true;
+        let  pass = document.querySelector('#exampleInputPassword1').value;
+        if(de_response.password === pass){
+            return  'login';  
         }
         else{
-            console.log(de_response);
-            return false;
+            return 'rejected';
         }
     }
+    
 
 }
