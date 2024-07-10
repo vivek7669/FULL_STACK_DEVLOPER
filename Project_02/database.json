@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": "15d1",
+      "username": "vivek",
+      "email": "vivek@123",
+      "password": "vivek"
+    },
+    {
+      "id": "dc3e",
+      "username": "rahul",
+      "email": "rahul@123",
+      "password": "rahul"
+    }
+  ],
+  "products": []
+}
