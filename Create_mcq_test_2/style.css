@@ -1,0 +1,9 @@
+.right{
+    background-color: rgba(0, 128, 0,0.5);
+    border-radius: 0.5rem;
+    
+}
+.wrong{
+    background-color:  rgba(255, 0, 0,0.5);
+    border-radius: 0.5rem;
+}

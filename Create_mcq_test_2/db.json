@@ -1,0 +1,20 @@
+{
+    "mcq" : [
+        {
+            "qus":"what is your Name ?",
+            "a":"rohan",
+            "b":"rahul",
+            "c":"raj",
+            "d":"ramesh",
+            "right":"rahul"
+        },
+        {
+            "qus":"what is your Name ?",
+            "a":"rohan",
+            "b":"rahul",
+            "c":"raj",
+            "d":"ramesh",
+            "right":"raj"
+        }
+    ]
+}
