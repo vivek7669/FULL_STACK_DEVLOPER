@@ -1,20 +1,31 @@
 {
-    "mcq" : [
-        {
-            "qus":"what is your Name ?",
-            "a":"rohan",
-            "b":"rahul",
-            "c":"raj",
-            "d":"ramesh",
-            "right":"rahul"
-        },
-        {
-            "qus":"what is your Name ?",
-            "a":"rohan",
-            "b":"rahul",
-            "c":"raj",
-            "d":"ramesh",
-            "right":"raj"
-        }
-    ]
+  "mcq": [
+    {
+      "qus": "what is your Name ?",
+      "a": "rohan",
+      "b": "rahul",
+      "c": "raj",
+      "d": "ramesh",
+      "right": "rahul",
+      "id": "4c3f"
+    },
+    {
+      "qus": "what is your Name ?",
+      "a": "rohan",
+      "b": "rahul",
+      "c": "raj",
+      "d": "ramesh",
+      "right": "raj",
+      "id": "05ec"
+    },
+    {
+      "id": "61dc",
+      "qus": " What will be the output of the following code snippet? ( print(typeof(NaN)); )",
+      "a": "Object",
+      "b": "String",
+      "c": "Nuber",
+      "d": "None Of the Above",
+      "right": "Nuber"
+    }
+  ]
 }
